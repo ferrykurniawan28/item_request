@@ -11,18 +11,10 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return GetMaterialApp(
-      // theme: ThemeData.dark(),
+  runApp(
+    GetMaterialApp(
       initialRoute: Pages.splash,
       getPages: Routes.pages,
-    );
-  }
+    ),
+  );
 }

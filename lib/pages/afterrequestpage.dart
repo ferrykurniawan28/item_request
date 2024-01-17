@@ -21,7 +21,7 @@ class AfterRequestPage extends StatelessWidget {
               onTap: () => Get.offAllNamed(Pages.home),
               child: Container(
                 padding: const EdgeInsets.all(20),
-                color: Colors.blue,
+                color: Colors.black,
                 child: const Text(
                   'Back to home',
                   style: TextStyle(color: Colors.white, fontSize: 20),
