@@ -65,6 +65,9 @@ class InventoryItemController extends GetxController {
     if (request.value < avail.value) {
       request.value++;
     }
+    if (Get.arguments[1]) {
+      request.value++;
+    }
     // request.value++;
   }
 

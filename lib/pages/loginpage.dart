@@ -17,10 +17,10 @@ class LoginPage extends GetView<LoginController> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text(
-                    'Login',
-                    style: TextStyle(fontSize: 30),
-                  ),
+                  Obx(() => Text(
+                        (controller.register.value) ? 'Register' : 'Login',
+                        style: const TextStyle(fontSize: 30),
+                      )),
                   const SizedBox(height: 20),
                   Obx(() {
                     if (controller.register.value) {
