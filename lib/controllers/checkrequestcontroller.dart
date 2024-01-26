@@ -19,8 +19,6 @@ class CheckRequestController extends GetxController {
   }
 
   void showdialog(String username, String id) {
-    // print(username);
-    // print(id);
     Get.dialog(
       AlertDialog(
         title: const Text('Request Approval'),

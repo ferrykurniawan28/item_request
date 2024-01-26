@@ -8,6 +8,7 @@ class HomePage extends GetView<HomeController> {
 
   @override
   Widget build(BuildContext context) {
+    // final controller = Get.put(HomeController());
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home'),

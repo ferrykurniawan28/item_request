@@ -77,7 +77,7 @@ class InventoryItemController extends GetxController {
     }
   }
 
-  Stream streamItem(String item) {
-    return db.streamItem(item);
-  }
+  // Stream streamItem(String item) {
+  //   return db.streamItem(item);
+  // }
 }

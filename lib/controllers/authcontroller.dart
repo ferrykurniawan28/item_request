@@ -6,7 +6,6 @@ import 'package:item_request/page.dart';
 class AuthController extends GetxController {
   final auth = FirebaseAuth.instance;
   final firebaseC = Get.put(FirebaseController());
-  // bool admin = isAdmin();
 
   bool isLoggedIn() {
     if (auth.currentUser != null) {

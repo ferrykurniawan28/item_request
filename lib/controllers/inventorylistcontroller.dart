@@ -36,9 +36,9 @@ class InventoryListController extends GetxController {
     super.onInit();
   }
 
-  Stream streamInventory() {
-    return db.streamInventory();
-  }
+  // Stream streamInventory() {
+  //   return db.streamInventory();
+  // }
 
   Future<void> updateInventoryItems() async {
     wrench.value = await db.getItem('wrench');

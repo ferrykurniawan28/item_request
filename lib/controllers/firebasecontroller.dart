@@ -47,10 +47,6 @@ class FirebaseController extends GetxController {
     });
   }
 
-  Future<void> deleteRequest(String username, String id) async {
-    await db.collection('requests').doc(id).delete();
-  }
-
   Future<void> updateItem(String item, int quantity) async {
     await db.collection('inventory').doc(item).update({
       'quantity': quantity,
@@ -84,15 +80,15 @@ class FirebaseController extends GetxController {
     return data.docs.length;
   }
 
-  Stream<QuerySnapshot> streamInventory() {
-    return db.collection('inventory').snapshots();
-  }
+  // Stream<QuerySnapshot> streamInventory() {
+  //   return db.collection('inventory').snapshots();
+  // }
 
-  Stream streamItem(String item) {
-    return db.collection('inventory').doc(item).snapshots().map((event) {
-      return event['quantity'];
-    });
-  }
+  // Stream streamItem(String item) {
+  //   return db.collection('inventory').doc(item).snapshots().map((event) {
+  //     return event['quantity'];
+  //   });
+  // }
 
   Stream<QuerySnapshot> streamRequests() {
     return db.collection('requests').snapshots();
